@@ -2,7 +2,7 @@ class Change
   attr_accessor(:coins)
   attr_reader(:value)
   def initialize(value)
-    @value = value
+    @value = value.to_f
     @coins = { 
     "quarters" => 0, 
     "dimes" => 0, 
@@ -31,16 +31,16 @@ class Change
       end
       return_string = String.new()
       if @coins["quarters"] != 0
-        return_string.concat("Quarters : #{@coins['quarters']} ")
+        return_string.concat("Quarters : #{@coins['quarters']} ,")
       end
       if @coins["dimes"] != 0
-        return_string.concat("Dimes : #{@coins['dimes']} ")
+        return_string.concat("Dimes : #{@coins['dimes']} ,")
       end
       if @coins["nickels"] != 0
-        return_string.concat("Nickels : #{@coins['nickels']} ")
+        return_string.concat("Nickels : #{@coins['nickels']} ,")
       end
       if @coins["pennies"] != 0
-        return_string.concat("Pennies : #{@coins['pennies']} ")
+        return_string.concat("Pennies : #{@coins['pennies']} .")
       end
       return_string
     end
