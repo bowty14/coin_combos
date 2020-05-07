@@ -14,6 +14,10 @@ describe ('#combo') do
   end
   it('will output value of nickels') do
     nickels = Change.new(0.05)
-    expect(nickels.coin_combos()).to(eq("Nickels: 1 "))
+    expect(nickels.coin_combos()).to(eq("Nickels : 1 "))
+  end
+  it('will output value for all coins in a random amount of change') do
+    change = Change.new(0.94)
+    expect(change.coin_combos()).to(eq("Quarters : 3 Dimes : 1 Nickels : 1 Pennies : 4 "))
   end
 end
