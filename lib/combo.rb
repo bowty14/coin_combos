@@ -35,9 +35,9 @@ class Change
       elsif @coins["dimes"] != 0
         return_string.concat("Dimes : #{@coins['dimes']} ")
       elsif @coins["nickels"] != 0
-        return_string.concat("Nickels : #{@coins['dimes']}")
+        return_string.concat("Nickels : #{@coins['dimes']} ")
       elsif @coins["pennies"] != 0
-        return_string.concat("Nickels : #{@coins['dimes'")
+        return_string.concat("Nickels : #{@coins['dimes']} ")
       end
       return_string
     end
