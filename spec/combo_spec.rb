@@ -9,7 +9,7 @@ describe ('#combo') do
   end
 
   it('will find a coin calue when the inputted number is 1,5,10,or 25') do
-   quarter = Change.new(0.75)
-   expect(quarter.coin_combos()).to(eq("Quarters : 3 "))
+   dimes = Change.new(0.20)
+   expect(dimes.coin_combos()).to(eq("Dimes : 2 "))
   end
 end

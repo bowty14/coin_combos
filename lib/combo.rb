@@ -32,6 +32,10 @@ class Change
       return_string = String.new()
       if @coins["quarters"] != 0
         return_string.concat("Quarters : #{@coins['quarters']} ")
+      elsif @coins["dimes"] != 0
+        return_string.concat("Dimes : #{@coins['dimes']} ")
+      elsif @coins["nickels"] != 0
+        return_string.concat("Nickels : #{@coins['dimes'")
       end
       return_string
     end
