@@ -13,7 +13,7 @@ describe ('#combo') do
    expect(dimes.coin_combos()).to(eq("Dimes : 2 "))
   end
   it('will output value of nickels') do
-    nickels = Change.new(0.10)
-    expect(nickels.coin_combos()).to(eq("Nickels: 2 "))
+    nickels = Change.new(0.05)
+    expect(nickels.coin_combos()).to(eq("Nickels: 1 "))
   end
 end
